@@ -40,7 +40,7 @@ li a:hover:not(.active) {
 /* For divs to put research and pubs in*/
 
 div {
-  width: 800px;
+  max-width: 800px
   border: 1px solid #000000;
   padding: 8px 12px;
   background-color: #E6E6E6
