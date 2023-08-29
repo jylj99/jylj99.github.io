@@ -4,8 +4,16 @@ body {
 
 h1 {
   font-size: 40px;
+  padding: 10px;
 }
 
+h2 {
+  padding: 10px;
+}
+
+p {
+  padding: 10px;
+}
 
 /* For nav bar */
 
@@ -45,7 +53,7 @@ div {
   width: 100%;
   min-height: 100%;
   border: 1px solid #000000;
-  padding: 8px 12px;
+  padding: 10px 12px;
   background-color: #E6E6E6
 }
 
