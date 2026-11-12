@@ -1,14 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400;700&display=swap');
+
+.grenze {
+  font-family: "Grenze", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.grenze-gotisch {
+  font-family: "Grenze Gotisch", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+
 body {
-  background-color: #F9F9F9;
+  background-color: #FFFFF0;
+  color: #2A2A2A;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
+  font-family: "Grenze Gotisch", serif;
   font-size: 40px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 h2 {
+  font-family: "Grenze", serif;
+  padding-left: 10px;
+  padding-right: 10px;
+} 
+
+h3 {
+  font-family: "Grenze", serif;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -23,48 +58,84 @@ img {
   padding-right: 10px;
 }
 
-/* For nav bar */
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #ABABAB;
+/* Navigation bar */
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  justify-content: center;
+  align-items: center;
+
+  background-color: #FFFFF0;
+  border-bottom: 2px solid #2A2A2A;
+
+  padding: 5px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  box-sizing: border-box;
 }
 
-li {
-  float: left;
-}
+/* Links */
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  width: fit-content;
 
-li a {
-  display: block;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 14px 16px;
+  font-family: "Grenze", serif;
+  font-size: 24px;
+  padding: 5px 10px;
+  color: #2A2A2A;
   text-decoration: none;
+
+  background: transparent;
+  cursor: pointer;
 }
 
-li a:hover:not(.active) {
-  background-color: #888888;
+/* Hover effect */
+.navbar a:hover {
+  color: #AE0000;
 }
 
-.active {
-  background-color: #000000;
+/* Centre  */
+.navbar .nav-center {
+  font-family: "Grenze Gotisch", serif;
+  font-size: 36px;
+  font-weight: bold;
 }
+
+/* Left */
+.navbar a:first-child {
+  justify-content: flex-end;
+}
+
+/* Right */
+.navbar a:last-child {
+  justify-content: flex-start;
+}
+
 
 /* For divs to put research and pubs in*/
 
 div {
   overflow:hidden;
   max-width: 1000px;
-  width: 100%;
+  width: 50%;
   min-height: 100%;
-  border: 1px solid #000000;
+  border: 1px solid #7A6F80;  
+  box-sizing: border-box;
+  
+  margin: 8px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #E6E6E6
+
+
+  background-color: #FFFFF0
 }
 
